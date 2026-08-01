@@ -116,7 +116,7 @@ runs:
       if: steps.check_exclude_file.outputs.files_exists == 'false'
       id: build-image
       # https://github.com/marketplace/actions/buildah-build
-      uses: redhat-actions/buildah-build@v2
+      uses: redhat-actions/buildah-build@v3
       with:
         dockerfiles: ${{ inputs.dockerfile }}
         image: ${{ inputs.image_name}}
