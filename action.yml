@@ -54,7 +54,7 @@ runs:
   using: "composite"
   steps:
     - name: Login to registry - to fail in the beggining of action if creds are incorrect
-      uses: redhat-actions/podman-login@v1
+      uses: redhat-actions/podman-login@v2
       with:
         registry: ${{ inputs.registry }}
         username: ${{ inputs.registry_username }}
